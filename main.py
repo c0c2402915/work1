@@ -1,7 +1,11 @@
 def main(): 
     items = [ {"name": "コーヒー", "amount": 300, "num": 2}, {"name": "本","amount": 500, "num": 1} 
     ] 
-    items = add_item(items) 
+    items = add_item(items)
+def add_item(items):
+    item={"name":"クッキー","amount":100,"num":3}
+    items.append(item)
+    return items     
 def print_items(items): 
     print("|商品名|金額|商品数|") 
     print("|----|----|----|") 
