@@ -5,7 +5,13 @@ def main():
 def add_item(items):
     item={"name":"クッキー","amount":100,"num":3}
     items.append(item)
-    return items     
+    return items  
+def sum_items(items):
+    for item in items:
+        name = item["name"]
+        num = item["num"]
+        amount = item["amount"]
+        print(f"{name}:{num*amount}円")   
 def print_items(items): 
     print("|商品名|金額|商品数|") 
     print("|----|----|----|") 
